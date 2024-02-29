@@ -26,3 +26,8 @@
 - fetch(URL) <----- get the data from the url
     .then(res => res.json()) <----- converts the data to js object
     .then(data => console.log(data)) <----- displays the js object
+
+
+- fetch(url) <----- pass a response as promise
+    .then(res => rer.json()) <----- modified the response and return data as promise
+    .then(data => ...) <----- we can do anything using these data
