@@ -28,6 +28,36 @@
     .then(data => console.log(data)) <----- displays the js object
 
 
-- fetch(url) <----- pass a response as promise
-    .then(res => rer.json()) <----- modified the response and return data as promise
+- fetch(url) <----- pass a response as a promise
+    .then(res => rer.json()) <----- modified the response and return data as a promise
     .then(data => ...) <----- we can do anything using these data
+
+
+
+## CRUD
+- Create, Read, Update, and Delete
+
+- #### Rest API methods
+    - GET: receive information about an API resource (by defualt)
+
+    - POST: create an API resource
+
+    - PUT/ PATCH: update an API resource
+        - PUT: total section kei overright kore
+            - create a new (if doesn't exist)
+            - replace the current item (if exist)
+        - PATCH: just specific keys gula k update kore and baki gula as it is.
+
+    - DELETE: delete an API resource
+
+- client side ---request---> Server ---> DataBase
+    DataBase ----> Server ----response---> client side 
+
+
+
+## HTTP status code
+- informational responses (100 - 199)
+- successful responses (200 - 299)
+- redirection messages (300 - 399)
+- client error responses (400 - 499)
+- server error responses (500 - 599)
